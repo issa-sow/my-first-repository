@@ -41,7 +41,8 @@ public class Etudiant {
 	}
 	
 	public String toString() {
-		return "Nom : " + this.nom + "\n" + 
+		return "Bonsoir M/Mm :)" + "\n" +
+				"Nom : " + this.nom + "\n" + 
 				"Prenom : " + this.prenom + "\n" +
 				"Niveau : " + this.niveau + "\n" +
 				"Note 1 : " + this.note1 + "\n" + 
