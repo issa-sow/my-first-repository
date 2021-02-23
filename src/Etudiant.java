@@ -1,27 +1,16 @@
 
-public class Etudiant {
-	private String nom;
-	private String prenom;
+public class Etudiant extends Personne {
 	private String niveau;
 	private double note1;
 	private double note2;
 	private double moy;
 	
 	public Etudiant(String nom, String prenom, String niveau, double note1, double note2) {
-		this.nom = nom;
-		this.prenom =prenom;
+		super(nom, prenom);
 		this.niveau = niveau;
 		this.note1 = note1;
 		this.note2 = note2;
 		this.moy = calculMoy();
-	}
-	
-	public String getNom() {
-		return this.nom;
-	}
-	
-	public String getPrenom() {
-		return this.prenom;
 	}
 	
 	public String getNiveau() {
@@ -41,9 +30,7 @@ public class Etudiant {
 	}
 	
 	public String toString() {
-		return "Bonsoir M/Mm :)" + "\n" +
-				"Nom : " + this.nom + "\n" + 
-				"Prenom : " + this.prenom + "\n" +
+		return 	super.toString() + 
 				"Niveau : " + this.niveau + "\n" +
 				"Note 1 : " + this.note1 + "\n" + 
 				"Note 2 : " + this.note2 + "\n" + 
