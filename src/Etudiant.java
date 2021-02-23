@@ -19,12 +19,32 @@ public class Etudiant extends Personne {
 		return this.niveau;
 	}
 	
+	public void setNiveau(String niveau) {
+		this.niveau = niveau;
+	}
+	
 	public double getNote1() {
 		return this.note1;
 	}
 	
+	public void setNote1(double note1) {
+		this.note1 = note1;
+	}
+	
 	public double getNote2() {
 		return this.note2;
+	}
+	
+	public void setNote2(double note2) {
+		this.note2 = note2;
+	}
+	
+	public Departement getDep() {
+		return this.dep;
+	}
+	
+	public void setDep(Departement dep) {
+		this.dep = dep;
 	}
 	
 	public double calculMoy() {

@@ -11,6 +11,14 @@ public class Main {
 		for(Etudiant etu : students) {
 			System.out.println(etu);
 		}
-	}
+		
+		students[0].setNote1(16);
+		students[0].getDep().setNomDep("BIG-DATA");
+		students[0].getDep().setTel("70 000 00 00");
+		
+		System.out.println("*******************[APRES MODIFICATION students[0]]**************************");
+	
+		System.out.println(students[0]);
+	} 
 
 }
