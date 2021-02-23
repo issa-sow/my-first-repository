@@ -17,8 +17,8 @@ public class Personne {
 	}
 	
 	public String toString() {
-		return "Bonsoir M/Mm :)" + "\n" +
-				"Nom : " + this.nom + "\n" +
-				"Prenom : " + this.prenom + "\n" ;
+		return "\t" + "Bonsoir M/Mm :)" + "\n" +
+				"\t" + "Nom : " + this.nom + "\n" +
+				"\t" + "Prenom : " + this.prenom + "\n" ;
 	}
 }
